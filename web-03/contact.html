@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-flex-info">
+            <a href="index.html"><img src="css/img/pngaaa.com-1551553.png" alt="logo" width="50px"
+                    class="logo-info"></a>
+            <nav class="info-nav-bar">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="info.html">About Animals</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="info-heading">Contact Us</h1>
+    </header>
+    <main class="main-contact">
+        <section class="form">
+            <form>
+                <span class="name">
+                    <input type="text" id="name" name="name" placeholder="Name" required><br>
+                </span>
+
+                <span class="email">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required><br>
+                </span>
+
+                <label for="date">Date of The Visit:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="Time">Time of The Visit:</label>
+                <input type="time" id="time" name="time" required><br>
+
+                <label for="rating">How would you rate</label><br>
+                <input type="range" id="range" name="range" required><br>
+
+                <p>Would you recommend</p>
+                <input type="radio" id="recommend-yes" name="recommend" value="yes">
+                <label for="recommend-yes">yes</label><br>
+                <input type="radio" id="recommend-no" name="recommend" value="no">
+                <label for="recommend-no">no</label><br>
+
+                <label for="animal-choice">Animal that you liked the most:</label>
+                <input list="animals" id="animal-choice" name="animals" placeholder="Choose One" required>
+                <datalist id="animals">
+                    <option value="Lion">
+                    <option value="Elephant">
+                    <option value="Giraffe">
+                    <option value="Panda Bear">
+                    <option value="Flamingo">
+                    <option value="Eagle">
+                    <option value="Penguin">
+                    <option value="Parrot">
+                    <option value="Eel">
+                    <option value="Puffer Fish">
+                    <option value="Piranha">
+                    <option value="Turtle">
+                    <option value="Crocodile">
+                    <option value="Anaconda">
+                </datalist><br>
+
+                <label for="visitor-info">Type of Visit:</label>
+                <input list="types" id="visitor-info" name="types" placeholder="choose" required>
+                <datalist id="types">
+                    <option value="Family Visit">
+                    <option value="Alone">
+                    <option value="Group Visit">
+                    <option value="With Friends">
+                    <option value="other">
+                </datalist><br>
+
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" placeholder="Write something..."></textarea><br>
+
+                <input type="submit" id="submit" name="submit">
+                <input type="reset" id="reset" name="reset">
+            </form>
+        </section>
+        <article class="contact-info">
+            <section>
+                <p><address>Test 1, 1000 Test</address><br>
+                <span>Open Hours</span><br>
+                <span>00:00-00:00</span><br>
+                <span>tel. 000 0000 0000</span><br>
+                <span>email xxxxxxxxxxxx</span></p>
+            </section>
+            <section class="follow">
+                <h3>Follow Us</h3>
+                <a href="#" class="instagram">Instagram</a><br>
+                <a href="#" class="facebook">Facebook</a><br>
+                <a href="#" class="twitter">Twitter</a>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <span class="footer">2021 Teodora</span>
+    </footer>
+</body>
+
+</html>

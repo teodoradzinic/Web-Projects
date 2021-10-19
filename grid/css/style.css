@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 50px 200px;
+    grid-gap: 3px;
+    text-align: center;
+
+}
+.container div{
+    background-color: rgb(78, 145, 145);
+}
+.header{
+    grid-column: 2/-1;
+}
+
+.menu{
+    grid-row: 1/4;
+}
+
+.content{
+    grid-column: 2/-1;
+}
+
+.footer{
+    grid-column: 2/-1;
+}
