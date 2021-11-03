@@ -1,0 +1,15 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+input{
+    display: block;
+    padding: 10px;
+    margin-top: 4px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid;
+}
+label{
+    font-weight: bold;
+}

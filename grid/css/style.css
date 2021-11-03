@@ -1,76 +1,21 @@
 body{
-    font-family: 'Playfair Display', serif;
-}
-.container{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: auto;
-    gap: 3px;
-    text-align: center;
-
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 100px auto 100px;
+    gap: 5px;
 }
-.container div{
-    background-color: rgb(238, 225, 232);
-    
+header{
+    background-color: salmon;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
-.header{
-    grid-column: 4/12;
+main{
+    background-color: sandybrown;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
-
-.menu{
-    grid-column: 2/4;
-    grid-row: 1/4;
-}
-.content p{
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-.content{
-    grid-column: 4/12;
-    text-align: left;
-}
-
-.footer{
-    grid-column: 4/12;
-    font-size: 2em;
-}
-.content img{
-    display: block;
-    width: 50%;
-    margin: auto;
-    border-radius: 20px;
-}
-.container h1{
-    font-size: 3em;
-    font-style: italic;
-}
-.content h3{
-    font-size: 1.7em;
-    margin-left: 10%;
-}
-.content p{
-    font-size: 1em;
-    text-align: left;
-}
-.content section div{
-    display: flex;
-    margin-bottom: 5%;
-}
-.menu ul{
-    list-style: none;
-    text-align: left;
-    font-size: 150%;
-}
-.menu li{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    word-break: break-word;
-}
-.menu ul li a{
-    text-decoration: none;
-    text-transform: lowercase;
-    color: black;
-    font-weight: bold;
-    
+footer{
+    background-color: seagreen;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }

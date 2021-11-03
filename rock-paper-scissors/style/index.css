@@ -1,0 +1,251 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    margin: 0%;
+}
+.index{
+    background-image: url(img/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 35%;
+    
+}
+.index:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#000000,#141414);
+        opacity: .7; 
+       z-index: -1;
+  }
+.index-h1{
+    color: rgb(224, 224, 224);
+    text-align: left;
+    padding: 30px 30px 50px 50px;
+    z-index: 1;
+    font-size: 6em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    cursor: default;
+ 
+}
+.play-btn{
+    padding-top: 20px;
+    margin-left: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 3em;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+.play-btn:hover{
+    color: rgb(230, 84, 59);
+}
+.play-btn:active{
+    color: red;
+}
+.icon::before{
+    content: ' ';
+    background-image: url('img/4208490.png');
+    background-size: 1em;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    margin-right: auto;
+    vertical-align: middle;
+}
+footer{
+    color: white;
+    width: 100%;
+    background-color: rgba(7, 7, 7, 0.13);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    
+}
+
+.game{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: auto auto auto;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    background-color: white;
+    background-image: linear-gradient(to bottom right,#5e5e5ec5,#000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.game header{
+    background-color: rgba(0, 0, 0, 0.082);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.game main{
+    background-color: rgba(0, 0, 0, 0.082);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+.game footer{
+    background-color: rgba(0, 0, 0, 0.027);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    position: unset;
+    margin-bottom: 0%;
+}
+.game main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: inherit;
+}
+.game section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.player{
+    border-right: red solid 2px;
+}
+.game section div{
+    max-width:50%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 50px;
+}
+.game section div img{
+    width: inherit;
+    height: inherit;
+    border-radius: 50px;
+    
+}
+.game main .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.rock, .paper, .scissors{
+    padding: 1%;
+    margin-top: 10px;
+    border: none;
+    width: calc(45%/3);
+    border-radius: 30px;
+    font-size: 80%;
+    margin-left: 4px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: rgb(36, 36, 36);;
+    cursor: pointer;
+
+}
+.rock:hover, .paper:hover, .scissors:hover{
+    background-color: rgb(167, 0, 0);
+    color: white;
+}
+.rock:active, .paper:active, .scissors:active{
+    background-color: rgb(255, 1, 1);
+    color: rgb(255, 255, 255);
+}
+.game-h1{
+    font-size: 3.5em;
+    margin: auto;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    max-width: 80%;
+    text-align: center
+}
+
+.player-name, .comp-player-name{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.restart{
+    content: ' ';
+    background-image: url('img/reload.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.restart:hover, .back:hover{
+    opacity: 1;
+}
+.game-header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+.back{
+    content: ' ';
+    background-image: url('img/back-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+@media screen and (max-width:1200px) {
+    .rock, .paper, .scissors{
+        width: 20%;
+    }
+    .game section div{
+        border-radius: 30px;
+        max-width: 70%;
+    }
+    .game section div img{
+        border-radius: 30px;
+        width: inherit;
+        }
+    
+}
+@media screen and (max-width:600px){
+    .game main .buttons{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .rock, .paper, .scissors{
+        width: 50%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .game section div{
+        border-radius: 15px;
+        max-width: 90%;
+    }
+    .game section div img{
+    border-radius: 15px;
+    }
+    .game-h1{
+        font-size: 2em;
+    }
+}

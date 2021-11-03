@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="style/index.css" rel="stylesheet">
+</head>
+
+<body class="game">
+
+    <header class="game-header">
+        <button class="back" onclick="location.href='index.html'" title="back to start"></button>
+        <p class="game-h1">Round: <span class="rounds-num">1</span></p> 
+        <button class="restart" title="restart"></button>
+    </header>
+
+    <main class="game-main">
+        <div>
+            <p>Won: <span class="player-win">0</span></p>
+            <p>Tie: <span class="tie">0</span></p>
+            <p>Won: <span class="comp-win">0</span></p>
+        </div>
+        <div>
+            <section class="player">
+
+                <div class="played">
+                    <img class="player-img" src="style/img/rock.png">
+                </div>
+                <p class="player-name">teki</p>
+            </section>
+            <section class="comp-player">
+
+                <div class="comp-played">
+                    <img class="comp-player-img" src="style/img/rock-mirrored.png">
+
+                </div>
+                <p class="comp-player-name"> Computer </p>
+            </section>
+        </div>
+        <div class="buttons">
+            <button class="rock">ROCK</button>
+            <button class="paper">PAPER</button>
+            <button class="scissors">SCISSORS</button>
+        </div>
+    </main>
+
+    <footer class="game-footer">
+        <span>By Teodora</span>
+    </footer>
+<script>
+    let name = prompt("What is your name?");
+    const rounds = prompt("Hello " + name + "! How many round would you like to play?");</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

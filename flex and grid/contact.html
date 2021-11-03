@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav class="navigation">
+            <button class="navbutton" aria-expanded="false" aria-controls="navi-liste">
+                <p>Menu</p>
+            </button>
+            <ul id="navi-liste">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="detailpage.html">New Year 2021</a></li>
+                <li><a href="#">Spring 2022</a></li>
+                <li><a href="#">Summer 2022</a></li>
+                <li><a href="#">Fall 2022</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" class="name" placeholder="name">
+                <label for="email">E-mail:</label>
+                <input type="email" class="email" placeholder="email">
+
+                <label for="destinations">Select Destination:</label>
+                <input list="destinations-list" class="destinations" name="destinations" placeholder="Choose One"
+                    required>
+                <datalist id="destinations-list">
+                    <option value="Paris">
+                    <option value="Amsterdam">
+                    <option value="Rome">
+                    <option value="Tokyo">
+                    <option value="Beijing">
+                    <option value="New York">
+                    <option value="Havana">
+                    <option value="London">
+                    <option value="Casablanca">
+                </datalist>
+
+                <label for="date">Date of Travel:</label>
+                <input type="date" class="date" name="date" required>
+
+                <label for="comment">Comment:</label>
+                <textarea class="comment" name="comment" placeholder="Write something..."></textarea>
+
+                <input type="submit" class="submit" name="submit">
+                <input type="reset" class="reset" name="reset">
+            </form>
+        </div>
+    </main>
+    <footer>
+     <span>Teodora 2021</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
