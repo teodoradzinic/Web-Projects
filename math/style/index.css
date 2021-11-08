@@ -1,42 +1,92 @@
+body{
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(61, 61, 61);
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
 h1{
     text-align: center;
-    margin: 2%;
+    margin: 1%;
+    font-size: 5em;
+    	
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 .examples{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 2%;
     justify-content: center;
 }
 .examples div{
-    width: calc(100%/10);
-    height: 150px;
-    background-color: rgb(255, 214, 223);
+    flex: 1 1 100px;
+    min-height: 100px;
+    background-color: lightpink;
     margin-left: 4px;
     margin-top: 4px;
     text-align: center;  
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
-
-input{
-    width: 60%;
-    height: 20%;
+.examples div span{
+    font-weight: bold;
+    display: block;
+    position: relative;
+    margin-top: 25%;
 }
-
 .buttons{
     display: flex;
     justify-content: space-around;
     margin: 2%;
 }
+button{
+    border: none;
+    padding: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
+    background-color: transparent;
+    color: rgb(61, 61, 61);
+    	
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+button:hover{
+    color: rgb(0, 66, 128);
+    cursor: pointer;
+}
+button:active{
+    color: rgb(45, 128, 206);
+    cursor: pointer;
+}
 .problem{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 200px;
-    margin-left: 25%;
-    margin-top: 1%;
-    background-color: rgb(161, 243, 243);
-    align-items: center;
+    max-width: 100%;
+    background-color: transparent;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5%;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+.ex{
+  width: 30%;
+  margin-right: 0%;
+  
+}
+input{
+    font-size: 0.8em;
+    font-family: 'Architects Daughter', cursive;
+    width: 10%;
+    background-color: transparent;
+    border: solid 3px lightseagreen;
+    border-radius: 10px;
 }
 .score{
-    margin-left: 50%;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    text-decoration: lightseagreen underline 4px;
 }
