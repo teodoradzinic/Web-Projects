@@ -4,7 +4,7 @@
 body{
     font-family: 'Bebas Neue', cursive;
     margin-bottom: 5vh;
-    width: auto;
+    max-width: auto;
 }
 header, .main-contact
 {
@@ -13,7 +13,7 @@ header, .main-contact
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    width: inherit;
+    max-width: inherit;
 }
 
 .index-heading{
@@ -51,6 +51,7 @@ header, .main-contact
 .index-nav-bar{
     background-color: #16181b;
     overflow: hidden;
+    max-width: 100%;
 }
 .index-nav-bar ul li{
     display: inline;
@@ -187,7 +188,7 @@ footer{
     right: 0px;
     margin-bottom: 0px;
     padding-top: 5px;
-    width: inherit;
+    max-width: 100%;
 }
 .logo-flex-info{
     display: flex;
@@ -394,6 +395,19 @@ form .email::before{
 }
 .contact-info .follow{
     margin-top: 20%;
+}
+.range{
+    width: 50%;
+}
+.range-div{
+    display: flex;
+    flex-direction: row;
+}
+.range-div span{
+    background-color: transparent;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
 .instagram::before{
     content: ' ';

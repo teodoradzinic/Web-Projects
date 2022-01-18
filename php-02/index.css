@@ -1,0 +1,20 @@
+.first{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 20px 20px 20px 20px 20px ;
+    gap: 5px;
+
+}
+.first p{
+    text-align: center;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.second p{
+    margin: 5px;
+    width: 10px;
+}
