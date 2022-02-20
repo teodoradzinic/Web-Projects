@@ -97,7 +97,6 @@ function compare() {
 
 function countingRounds() {
 
-
     if (roundsPlayed >= rounds) {
         isAlive = false;
         if (playerWin > compWin) {
